@@ -291,3 +291,74 @@
         overflow: hidden;
     }
 }
+
+.s-conta-digital {
+    padding-top: 12.7rem;
+    padding-bottom: 8.5rem;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .text-area {
+        h2 {
+            width: 100%;
+            max-width: 54.2rem;
+        }
+        .grey {
+            color: $grey-200;
+            opacity: 0.8;
+            margin-bottom: 0.9rem;
+        }
+        ul {
+            margin-top: 4.5rem;
+            margin-bottom: 5.3rem;
+            li {
+                display: flex;
+                height: 5.3rem;
+                &:not(&:last-child) {
+                    margin-bottom: 3.7rem;
+                }
+                h4 {
+                    margin-bottom: 0.4rem;
+                }
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 150%;
+                    color: $grey-300;
+                }
+            }
+        }
+        .icon {
+            @include flex(row, center, center);
+            margin-right: 2.6rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 0.8rem;
+            background-color: $brand-green-light;
+        }
+    }
+    .box-image {
+        position: relative;
+        width: 100%;
+        max-width: 71.2rem;
+        height: 59.8rem;
+        left: 19rem;
+        img {
+            position: absolute;
+            &.circle {
+                right: 0;
+                bottom: 0;
+            }
+            &.mockup-01 {
+                bottom: 4.7rem;
+                left: 0rem;
+            }
+            &.mockup-02 {
+                left: 25.8rem;
+                top: 0rem;
+            }
+        }
+    }
+}
