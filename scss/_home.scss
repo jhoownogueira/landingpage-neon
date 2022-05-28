@@ -362,3 +362,110 @@
         }
     }
 }
+
+footer {
+    background-color: $brand-blue;
+    height: 100%;
+    padding-top: 4.9rem;
+    .top {
+        @include flex(row, center, space-between);
+        padding-bottom: 4.8rem;
+        border-bottom: 2px solid #49c4fd33;
+        .social-media {
+            @include flex(row, center, space-between);
+            p {
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 125%;
+                text-align: right;
+                color: #ffffffb3;
+            }
+            a {
+                margin-left: 3rem;
+            }
+        }
+    }
+    .mid {
+        @include flex(row, flex-start, space-between);
+        padding-top: 5.7rem;
+        padding-bottom: 6.2rem;
+        border-bottom: 2px solid #49c4fd33;
+        nav {
+            width: 100%;
+
+            @include flex(row, flex-start, space-between);
+            ul {
+                text-align: left;
+                li {
+                    &:not(&:last-child) {
+                        margin-bottom: 2.5rem;
+                    }
+                    p {
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        line-height: 125%;  
+                        color: $white;
+                    }
+                    a {
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 1.7rem;
+                        color: $white;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .btns {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 28rem;
+            margin-left: 7.4rem;
+            .btn-contato {
+                display: flex;
+                align-items: center;
+                background: #00a4f03b;
+                border-radius: 6px;
+                padding: 1.7rem 2rem;
+                &:not(&:last-child) {
+                    margin-bottom: 2.4rem;
+                }
+                .info {
+                    text-align: left;
+                    color: $white;
+                    margin-left: 2.4rem;
+                    span {
+                        font-family: 'Inter',sans-serif;
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        padding: 3.9rem 0;
+        text-align: left;
+        width: 100%;
+        border-bottom: 4px solid $brand-yellow;
+        h3 {
+            margin-right: 2.5rem;
+        }
+        p {
+            max-width: 70rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+}
