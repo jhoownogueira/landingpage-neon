@@ -8,27 +8,69 @@ header {
     .container {
         height: 8.8rem;
         @include flex(row, center, space-between);
-        nav {
+    }
+    nav {
+        @include flex(row, center, space-between);
+        ul {
+            margin-right: 5.9rem;
             @include flex(row, center, space-between);
-            ul {
-                margin-right: 5.9rem;
-                @include flex(row, center, space-between);
-                li {
-                    &:not(:first-child) {
-                        margin-left: 4.8rem;
-                    }
-                    a {
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 500;
-                        font-size: 1.6rem;
-                        line-height: 125%;
-                        color: $white;
-                        transition: all 0.3s;
-                        &:hover {
-                            color: $brand-yellow;
-                        }
+            li {
+                &:not(:first-child) {
+                    margin-left: 4.8rem;
+                }
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                    line-height: 125%;
+                    color: $white;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: $brand-yellow;
                     }
                 }
+            }
+        }
+        .btn-mobile {
+            display: none;
+        }
+    }
+    @include responsive(1080px) {
+        nav {
+            ul {
+                margin-right: 4rem;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(991px) {
+        .container {
+            img {
+                max-width: 10.8rem;
+            }
+        }
+        nav {
+            ul {
+                display: none;
+            }
+            .btn-mobile {
+                display: block;
+                margin-left: 4rem;
+                background-color: transparent;
+            }
+        }
+    }
+    @include responsive(480px) {
+        .container {
+            height: 7.3rem;
+        }
+        nav {
+            .btn-white {
+                display: none;
             }
         }
     }
