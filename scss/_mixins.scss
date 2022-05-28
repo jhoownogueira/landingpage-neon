@@ -1,0 +1,49 @@
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;    
+}
+
+@mixin responsive($screenWidth) {
+    @media(max-width: $screenWidth) {
+        @content;
+    }
+}
+
+@mixin bg-gradient {
+    background: linear-gradient(99.31deg, #00A5F0 7.94%, #00D7D7 95.32%);
+}
+
+@mixin btn-primary($bgColor, $bgColorHover) {
+    background-color: $brand-yellow;
+    line-height: 4.1rem;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    border-radius: 12.2rem;
+    color: #855B35;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+
+        background-color: $bgColorHover;
+    }
+}
+
+@mixin btn-secondary($bgColor, $colorText, $bgColorHover, $colorTextHover) {
+    background-color: $bgColor;
+    line-height: 4.1rem;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    border: 1px solid $colorText;
+    border-radius: 12.2rem;
+    color: $colorText;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+
+        background-color: $bgColorHover;
+        color: $colorTextHover;
+    }
+}
+

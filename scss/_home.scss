@@ -1,0 +1,293 @@
+.s-hero {
+    width: 100%;
+    height: 78.6rem;
+    padding-top: 17.5rem;
+    background: url(/img/bg-hero.svg) no-repeat center center;
+    .container {
+        @include flex(row, flex-start, space-between)
+    }
+    .text {
+        width: 100%;
+        max-width: 68.4rem;
+        h3 {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3.2rem;
+        }
+        h1 {
+            color: $white;
+            padding-bottom: 3.9rem;
+        }   
+        ul {
+            width: 100%;
+            max-width: 62.1rem;
+            margin-top: 6.4rem;
+            @include flex(row, center, space-between);
+            li {
+                display: flex;
+                align-items: center;
+                .icon {
+                    @include flex(row, center, center);
+                    margin-right: 1.2rem;
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    border-radius: 50%;
+                    background: linear-gradient(180deg, #35cbe266 0%, #35cae200 100%);
+                }
+                span {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    color: $white;
+                }
+            }
+        } 
+    }
+    .area-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: -17.4rem;
+        width: 100%;
+        max-width: 78.6rem;
+        h2 {
+            margin-bottom: 6.7rem;
+            color: #ffffff66;
+            font-weight: 600;
+        }
+        .image {
+            position: relative;
+            top: 3.5rem;
+            width: 100%;
+            height: 54.1rem;
+            img {
+                position: absolute;
+            }
+            .circle {
+                top: 0;
+                right: 0;
+                z-index: 10;
+            }
+            .card-back {
+                top: 17.1rem;
+                right: 4.8rem;
+                z-index: 20;
+            }
+            .card-front {
+                top: 4.1rem;
+                left: 0;
+                z-index: 30;
+            }
+        }
+    }
+}
+
+.s-card-neon {
+    padding-top: 12.9rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-area {
+        width: 100%;
+        max-width: 27.7rem;
+        .ilustra-mockup {
+            position: relative;
+            width: 100%;
+            max-width: 27.7rem;
+            margin-bottom: 12.9rem;
+            .circle {
+                position: absolute;
+                z-index: -1;
+                top: 8.7rem;
+                max-width: 37.7rem;
+                left: -21.4rem;
+
+            }
+        }
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .icon {
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 0.5rem;
+                    height: 8.3rem;
+                    background: url(/img/points.svg) no-repeat center center;
+                    position: absolute;
+                    top: -10.4rem;
+                    left: calc(50% - 0.25rem);
+                }
+            }
+            .info-txt {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    margin-top: 3.6rem;
+                    text-align: center;
+                }
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    text-align: center;
+                    color: rgba(95, 92, 107, 0.8);
+                    margin-bottom: 2.6rem;
+                }
+            }
+            ul {
+                li {
+                    &:not(:first-child) {
+                        margin-top: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    .right-area {
+        width: 100%;
+        max-width: 80rem;
+        .main-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 54rem;
+            margin-bottom: 14.4rem;
+            h2 {
+                width: 100%;
+                max-width: 48.8rem;
+                margin-bottom: 1.6rem;
+            }
+            ul {
+                width: 100%;
+                max-width: 80rem;
+                li {
+                    height: 12.8rem;
+                    border-bottom: 1px solid #e1e0e7e6;
+                    @include flex (row, center, space-between);
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 4.3rem;
+                        }
+                        .text {
+                            p {
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 400;
+                                font-size: 1.8rem;
+                                line-height: 150%;
+                                color: $grey-300;
+                            }
+                        }
+                    }
+                }
+            }
+            a {
+                width: fit-content;
+                position: relative;
+                margin-top: 3.2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 112%;
+                letter-spacing: -0.05rem;     
+                color: $brand-blue;
+                transition: all 0.3s;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: -1.8rem;
+                    bottom: 0;
+                    width: 1rem;
+                    height: 0.3rem;
+                    background-color: $brand-yellow;
+
+                }
+                &:hover {
+                    color: $brand-yellow
+                }
+            }
+        }
+        .box-image {
+            position: relative;
+            width: 100%;
+            height: 41rem;
+            background: url(/img/bg-box-card-neon.svg) no-repeat center center;
+            border: 1.2rem;
+            padding-left: 5.9rem;
+            padding-top: 7.9rem;
+            .text {
+                h2, h3, p {
+                    color: $white;
+                    width: 100%;
+                    max-width: 32.7rem;
+                }
+                h3 {
+                    margin-top: 1.1rem;
+                    margin-bottom: 0.8rem;
+                }
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+
+                }
+                .buttons {
+                    margin-top: 0.7rem;
+                    width: 100%;
+                    max-width: 28rem;
+                    .btn-primary {
+                        &:not(&:last-child) {
+                            margin-right: 1.6rem;
+                        }
+                    }
+                }
+            }
+            img {
+                position: absolute;
+                top: 10rem;
+                right: -2.9rem;
+            }
+        }
+    }
+}
+
+.s-depoimentos {
+    padding-top: 13.4rem;
+    .top {
+        @include flex(row, flex-end, space-between);
+        margin-bottom: 4rem;
+        h2 {
+            span {
+                display: block;
+                color: $grey-200;
+                margin-bottom: 1.4rem;
+            }
+        }
+        .swiper-pagination {
+            position: relative;
+            bottom: unset;
+            left: unset;
+            width: unset;
+            .swiper-pagination-bullet {
+                background: $brand-yellow;
+                opacity: 0.3;
+                border-radius: 1.2rem;
+                margin: 0 0.2rem;
+                transition: all 0.3s;
+                &-active {
+                    opacity: 1;
+                    width: 1.7rem;
+                }
+            }
+        }
+    }
+    .slide-depoimentos {
+        overflow: hidden;
+    }
+}

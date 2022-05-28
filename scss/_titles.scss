@@ -1,0 +1,36 @@
+h1, h2, h3, h4 {
+    color: $grey-500;
+}
+
+h1, h2, h4 {
+    line-height: 112%;
+}
+
+h1, h2 {
+    letter-spacing: -0.1rem;
+}
+
+h3, h4 {
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    letter-spacing: -0.05rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 6.4rem;   
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4.0rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 2rem;
+}
