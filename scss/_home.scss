@@ -2,7 +2,7 @@
     width: 100%;
     height: 78.6rem;
     padding-top: 17.5rem;
-    background: url(img/bg-hero.svg) no-repeat center center;
+    background: url(../img/bg-hero.svg) no-repeat center center;
     .container {
         @include flex(row, flex-start, space-between)
     }
@@ -114,7 +114,7 @@
                     content: '';
                     width: 0.5rem;
                     height: 8.3rem;
-                    background: url(img/points.svg) no-repeat center center;
+                    background: url(../img/points.svg) no-repeat center center;
                     position: absolute;
                     top: -10.4rem;
                     left: calc(50% - 0.25rem);
@@ -216,7 +216,7 @@
             position: relative;
             width: 100%;
             height: 41rem;
-            background: url(img/bg-box-card-neon.svg) no-repeat center center;
+            background: url(../img/bg-box-card-neon.svg) no-repeat center center;
             border: 1.2rem;
             padding-left: 5.9rem;
             padding-top: 7.9rem;
