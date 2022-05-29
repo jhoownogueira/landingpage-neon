@@ -587,6 +587,8 @@
         align-items: center;
     }
     .text-area {
+        width: 100%;
+         max-width: 55.8rem;
         h2 {
             width: 100%;
             max-width: 54.2rem;
@@ -645,6 +647,83 @@
             &.mockup-02 {
                 left: 25.8rem;
                 top: 0rem;
+            }
+        }
+    }
+    @include responsive(1200px){
+        .container {
+            .box-image {
+                left: 4rem;
+            }
+        }
+    }
+    @include responsive(1000px) {
+        padding-top: 8.6rem;
+        .container {
+            flex-direction: column;
+            .text-area {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 7.8rem;
+                h2 {
+                    text-align: center;
+                }
+                ul {
+                    margin-bottom: 4.9rem;
+                }
+            }
+            .box-image {
+                .circle {
+                    transform: rotate(180deg);
+                    right: 7.5rem;
+                }
+            }
+        }
+
+    }
+    @include responsive(480px) {
+        .container {
+            .text-area {
+                h2 {
+                    font-size: 2.8rem;
+                }
+                ul {
+                    li {
+                        flex-direction: column;
+                        align-items: center;
+                        height: 15rem;
+                        .icon {
+                            min-width: 4.8rem;
+                            min-height: 4.8rem;
+                            margin-bottom: 1.6rem;
+                        }
+                        .info {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .box-image {
+                left: 0;
+                width: 35.7rem;
+                height: 41rem;
+                .circle {
+                    bottom: unset;
+                    right: unset;
+                    width: 32.5rem;
+                }
+                .mockup-01 {
+                    width: 16rem;
+                    bottom: 0;
+                    left: 0;
+                }
+                .mockup-02 {
+                    width: 16rem;
+                    top: 0;
+                    right: 0;
+                    left: unset;
+                }
             }
         }
     }
