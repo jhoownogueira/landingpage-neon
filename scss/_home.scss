@@ -73,12 +73,14 @@
                 right: 4.8rem;
                 z-index: 20;
                 max-width: 35.2rem;
+                animation: floating 8s infinite;
             }
             .card-front {
                 top: 4.1rem;
                 left: 0;
                 z-index: 30;
                 max-width: 43.5rem;
+                animation: floating 6s infinite;
             }
         }
     }
@@ -904,5 +906,17 @@ footer {
                 }
             }
         }
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    66% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
