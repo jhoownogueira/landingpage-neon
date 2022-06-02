@@ -699,6 +699,7 @@
                             min-width: 4.8rem;
                             min-height: 4.8rem;
                             margin-bottom: 1.6rem;
+                            margin-right: 0;
                         }
                         .info {
                             text-align: center;
@@ -897,7 +898,7 @@ footer {
                 }
                 .btns {
                     position: unset;
-                    padding-left: 3rem;
+                    margin: 0 auto;
                     .btn-contato {
                         img {
                             display: none;
