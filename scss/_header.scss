@@ -1,13 +1,41 @@
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+    z-index: 99;
+    &.secondary-menu {
+        background-color: #fff;
+        .container {
+            .logo {
+                background: url(../img/logo-color.svg) no-repeat center center;
+            }
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        color: $grey-400;
+                    }
+                }
+            }
+        }
+    }
 
     .container {
         height: 8.8rem;
         @include flex(row, center, space-between);
+        .logo {
+            display: inline-block;
+            background: url(../img/logo.svg) no-repeat center center;
+            height: 3rem;        
+            width: 13.2rem;
+            background-size: 100%;
+
+    }
+
     }
     nav {
         @include flex(row, center, space-between);
