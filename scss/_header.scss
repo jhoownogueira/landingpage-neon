@@ -11,6 +11,7 @@ header {
         .container {
             .logo {
                 background: url(../img/logo-color.svg) no-repeat center center;
+                background-size: contain;
             }
         }
         nav {
@@ -30,9 +31,10 @@ header {
         .logo {
             display: inline-block;
             background: url(../img/logo.svg) no-repeat center center;
-            height: 3rem;        
-            width: 13.2rem;
-            background-size: 100%;
+            height: 3rem; 
+            width: 100%;       
+            max-width: 13.2rem;
+            background-size: contain;
 
     }
 
@@ -64,6 +66,10 @@ header {
         }
     }
     @include responsive(1080px) {
+        position: absolute;
+        &.secondary-menu {
+            display: none;
+        }
         nav {
             ul {
                 margin-right: 4rem;
